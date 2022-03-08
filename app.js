@@ -9,6 +9,8 @@ var indexRouter = require('./routes/index');
 var apiRouter = require('./routes/apiRouter');
 
 var app = express();
+var cors = require('cors');
+app.use(cors());
 
 app.use(logger('dev'));
 app.use(express.json());

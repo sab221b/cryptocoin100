@@ -1,0 +1,37 @@
+<div class="table-container">
+    <div class="card">
+        <div class="card-body row">
+            <h4 class="col-8 col-md-10">Top 100 Crytocoins</h4>
+            <button type="button" (click)="getRecords()" class="col-4 col-md-2 btn btn-outline-primary">
+                Refresh
+            </button>
+        </div>
+
+    </div>
+</div>
+
+<div class="table-container">
+    <!-- <ngx-datatable [rows]="rows" [columns]="columns"> </ngx-datatable> -->
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col" *ngFor="let item of columns">{{item.name}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of records; index as i">
+                <th scope="row">{{ i + 1 }}</th>
+                <td>{{ item.name }}</td>
+                <td>{{ item.title }}</td>
+                <td>{{ item.description }}</td>
+                <td>{{ item.num_tokens | number }}</td>
+                <td>{{ item.avg_price_change | number }}</td>
+                <td>{{ item.market_cap | number }}</td>
+                <td>{{ item.market_cap_change | number }}</td>
+                <td>{{ item.volume | number }}</td>
+                <td>{{ item.volume_change | number }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
