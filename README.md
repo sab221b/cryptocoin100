@@ -19,6 +19,7 @@ This is a [Node.js](https://nodejs.org/en/) module available through the
 Before installing, [download and install Node.js](https://nodejs.org/en/download/).
 Node.js 16 or higher is required.
 
+Mongo DB is required, [download, install and run MongoDB](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/).
 
 Backend Installation is done using the
 [`npm install` command](https://docs.npmjs.com/getting-started/installing-npm-packages-locally):
@@ -75,6 +76,11 @@ $ npm install -g express-generator@4
 ```console
 $ express /tmp/foo && cd /tmp/foo
 ```
+
+  Start the mongodb instance:
+
+[download, install and run MongoDB](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/).
+
 
 Install dependencies:
 
