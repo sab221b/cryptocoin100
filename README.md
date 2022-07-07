@@ -33,6 +33,12 @@ for more information.
 Start the application using
 [`npm start` command]
 
+Frontend is running on 
+[`PORT: 4200` command]
+
+Backend is running on 
+[`PORT: 3000` command]
+
 ## Features
 
   * Robust routing
