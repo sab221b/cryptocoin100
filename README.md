@@ -30,7 +30,7 @@ Frontend Installation is done using the
 Follow [our installing guide](http://expressjs.com/en/starter/installing.html)
 for more information.
 
-Starting application using the
+Start the application using
 [`npm start` command]
 
 ## Features
@@ -70,11 +70,13 @@ $ npm install -g express-generator@4
 $ express /tmp/foo && cd /tmp/foo
 ```
 
-  Install dependencies:
+Install dependencies:
 
-```console
-$ npm install
-```
+Backend Installation is done using the
+[`npm install` command](https://docs.npmjs.com/getting-started/installing-npm-packages-locally):
+
+Frontend Installation is done using the
+[`cd frontend && npm install` command](https://docs.npmjs.com/getting-started/installing-npm-packages-locally):
 
   Start the server:
 
